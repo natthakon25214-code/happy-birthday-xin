@@ -1,0 +1,10 @@
+[script.js](https://github.com/user-attachments/files/24594505/script.js)
+[index.html](https://github.com/user-attachments/files/24594504/index.html)
+[6.mp3](https://github.com/user-attachments/files/24594496/6.mp3)
+![5](https://github.com/user-attachments/assets/354a0787-00a5-4d34-8509-edd021927444)
+![4](https://github.com/user-attachments/assets/d48a4b7d-ce00-4827-ab9e-0903d0530d70)
+![3](https://github.com/user-attachments/assets/a865138d-a1b3-434b-b66d-49d34a42e8c1)
+![2](https://github.com/user-attachments/assets/e7e035e0-79fa-45aa-a69e-b4518b392343)
+![1](https://github.com/user-attachments/assets/52e83e63-8cda-4c7a-b124-bad6a6e82cdf)
+[style.css](https://github.com/user-attachments/files/24594481/style.css)
+
