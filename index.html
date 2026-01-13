@@ -1,67 +1,65 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday XIN ❤️</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
-  <!-- เพลงรัก -->
-   
-  <audio id="bgm" loop>
-    <source src="6.mp3" type="audio/mpeg">
-  </audio>
+<audio id="bgm" loop>
+  <source src="6.mp3" type="audio/mpeg">
+</audio>
 
-  <!-- Confetti -->
-  <canvas id="confetti"></canvas>
+<canvas id="confetti"></canvas>
 
-  <div class="container">
-    <h1 class="title">🎉 Happy Birthday 🎉</h1>
-    <h2 class="name">XIN 💕</h2>
+<!-- ======================
+     STORY MODE
+====================== -->
+<div id="story">
 
-    <!-- Slider -->
-    <div class="photo-slider" id="slider">
-      <div class="slides">
-        <div class="slide">
-          <img src="1.jpeg">
-          <span class="love-text">ดีใจที่ได้อยู่กับเธอ💕</span>
-        </div>
-        <div class="slide">
-          <img src="2.jpeg">
-          <span class="love-text">เค้าชอบในที่เธอเป็นเธอ 💕</span>
-        </div>
-        <div class="slide">
-          <img src="3.jpeg">
-          <span class="love-text">อยากให้เธอสดใสแบบนี้ตลอดไป💕</span>
-        </div>
-        <div class="slide">
-          <img src="4.jpeg">
-          <span class="love-text">ถึงเค้าจะบอกรักไม่เก่ง💕</span>
-        </div>
-        <div class="slide">
-          <img src="5.jpeg">
-          <span class="love-text">แต่เค้าก็จะบอกแบบที่เป็นเค้า💕</span>
+  <!-- Scene 1 -->
+  <section class="scene active">
+    <h1>เค้ามีอะไรบางอย่าง<br>ที่จะให้เธอดู 💖</h1>
+    <button onclick="nextScene()">แตะตรงนี้เลยอ้วน</button>
+  </section>
+
+  <!-- Scene 2 -->
+  <section class="scene">
+    <h1>🎉 สุขสันต์วันเกิดค่ะที่รัก 🎉<br>XIN</h1>
+    <button onclick="nextScene()">ดูความทรงจำของเรา</button>
+  </section>
+
+  <!-- Scene 3 (ของเดิมคุณทั้งหมด) -->
+  <section class="scene">
+
+    <div class="container">
+      <h1 class="title">🎉 Happy Birthday 🎉</h1>
+      <h2 class="name">XIN XIN 💕</h2>
+
+      <div class="photo-slider" id="slider">
+        <div class="slides">
+          <div class="slide"><img src="1.jpeg"><span class="love-text">ดีใจที่ได้อยู่กับเธอ💕</span></div>
+          <div class="slide"><img src="2.jpeg"><span class="love-text">เค้าชอบในที่เธอเป็นเธอ 💕</span></div>
+          <div class="slide"><img src="3.jpeg"><span class="love-text">อยากให้เธอสดใสแบบนี้ตลอดไป💕</span></div>
+          <div class="slide"><img src="4.jpeg"><span class="love-text">ถึงเค้าจะบอกรักไม่เก่ง💕</span></div>
+          <div class="slide"><img src="5.jpeg"><span class="love-text">แต่เค้าก็จะบอกแบบที่เป็นเค้า💕</span></div>
         </div>
       </div>
+
+      <p class="message">
+        สุขสันต์วันเกิดนะที่รัก 💖<br>
+        เค้าอยากให้เธออยู่กับเค้าไปนานๆ<br>
+        ขอบคุณที่ทำให้ทุกวันของเค้ามีความหมาย<br>
+        รักอ้วนที่สุดเลยนะ ❤️
+      </p>
     </div>
 
-    <!-- Message -->
-    <p class="message">
-      สุขสันต์วันเกิดนะที่รัก 💖<br>
-        เค้าอยากให้เธออยู่กับเค้าไปนานๆ อยากอยูู่ในช่วงเวลาที่ดีของเธอไปทุกๆปี<br> ขอบคุณที่ทำให้ทุกวันของเค้ามีความหมาย<br>
-      รักอ้วนที่สุดเลยนะ ❤️
-    </p>
-  </div>
+    <button onclick="nextScene()">อ่านต่ออีกนิด</button>
+  </section>
 
-  <!-- ปุ่มเพลง -->
-  <button class="play-btn" onclick="playMusic()">
-    ▶️ ลองกดดูสิที่รัก
-  </button>
+  <!-- Scene 4 -->
+  <section class="scene">
+    <h2>เค้ารักไอหมูอ้วนที่สุดเลยยยยย 💕</h2>
+  </section>
 
-  <div id="hearts"></div>
+</div>
 
-  <script src="script.js"></script>
+<button class="play-btn" onclick="playMusic()">▶️ ลองกดดูสิที่รัก</button>
+<div id="hearts"></div>
+
+<script src="script.js"></script>
 </body>
-</html>
