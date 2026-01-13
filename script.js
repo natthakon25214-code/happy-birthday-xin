@@ -1,4 +1,21 @@
 /* ======================
+   📖 STORY MODE
+====================== */
+let currentScene = 0;
+const scenes = document.querySelectorAll(".scene");
+
+function nextScene() {
+  scenes[currentScene].classList.remove("active");
+  currentScene++;
+  scenes[currentScene].classList.add("active");
+
+  // เริ่มเพลง + confetti ตอนเข้า Scene 2
+  if (currentScene === 1) {
+    drawConfetti();
+  }
+}
+
+/* ======================
    ❤️ หัวใจลอย
 ====================== */
 function createHeart() {
@@ -152,3 +169,4 @@ function heartbeat() {
 
   requestAnimationFrame(heartbeat);
 }
+
