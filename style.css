@@ -166,3 +166,37 @@ body {
     opacity: 0;
   }
 }
+/* ======================
+   STORY MODE
+====================== */
+.scene {
+  min-height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.scene.active {
+  display: flex;
+}
+
+.scene h1, .scene h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  animation: fadeUp 1.2s ease;
+}
+
+.scene button {
+  margin-top: 30px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #ff6f91;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
