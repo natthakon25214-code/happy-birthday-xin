@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday XIN ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- เพลงรัก -->
+   
+  <audio id="bgm" loop>
+    <source src="6.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Confetti -->
+  <canvas id="confetti"></canvas>
+
+  <div class="container">
+    <h1 class="title">🎉 Happy Birthday 🎉</h1>
+    <h2 class="name">XIN 💕</h2>
+
+    <!-- Slider -->
+    <div class="photo-slider" id="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="1.jpeg">
+          <span class="love-text">ดีใจที่ได้อยู่กับเธอ💕</span>
+        </div>
+        <div class="slide">
+          <img src="2.jpeg">
+          <span class="love-text">เค้าชอบในที่เธอเป็นเธอ 💕</span>
+        </div>
+        <div class="slide">
+          <img src="3.jpeg">
+          <span class="love-text">อยากให้เธอสดใสแบบนี้ตลอดไป💕</span>
+        </div>
+        <div class="slide">
+          <img src="4.jpeg">
+          <span class="love-text">ถึงเค้าจะบอกรักไม่เก่ง💕</span>
+        </div>
+        <div class="slide">
+          <img src="5.jpeg">
+          <span class="love-text">แต่เค้าก็จะบอกแบบที่เป็นเค้า💕</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <p class="message">
+      สุขสันต์วันเกิดนะที่รัก 💖<br>
+        เค้าอยากให้เธออยู่กับเค้าไปนานๆ อยากอยูู่ในช่วงเวลาที่ดีของเธอไปทุกๆปี<br> ขอบคุณที่ทำให้ทุกวันของเค้ามีความหมาย<br>
+      รักอ้วนที่สุดเลยนะ ❤️
+    </p>
+  </div>
+
+  <!-- ปุ่มเพลง -->
+  <button class="play-btn" onclick="playMusic()">
+    ▶️ ลองกดดูสิที่รัก
+  </button>
+
+  <div id="hearts"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
